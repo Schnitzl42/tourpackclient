@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginLeft="8dp"
+android:layout_marginRight="8dp"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingBottom="16dp"
+android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="long name for super fancy offer in kitzbühl"
+            android:textSize="25sp"
+            android:id="@+id/textViewOfferTitle"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.1"
+            android:id="@+id/imageViewSaveOffer"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_stars_black_24dp"/>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:src="@drawable/intercontinental_hong_kong_slide_1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:id="@+id/imageViewOfferImage"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewOfferDescription"
+        android:text="super awesome description of this fancy nice sweet offer for only 99.99$"
+        android:textSize="18sp"/>
+
+
+
+</LinearLayout>

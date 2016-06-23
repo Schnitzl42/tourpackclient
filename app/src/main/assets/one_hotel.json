@@ -1,0 +1,232 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : [ "schema:ImageObject", "rdfs:Resource", "http://purl.org/dc/dcmitype/Image", "schema:CreativeWork", "schema:Thing", "schema:MediaObject" ],
+    "schema:caption" : [ {
+      "@language" : "en",
+      "@value" : "Hotel in summer"
+    }, {
+      "@language" : "de",
+      "@value" : "Hotel Sommer"
+    } ],
+    "category" : "1",
+    "schema:contentUrl" : "https://imageupload.seekda.com/~images/AT_ET_VITA/haus-vorne.jpg?orig"
+  }, {
+    "@id" : "_:b1",
+    "@type" : [ "schema:ImageObject", "http://purl.org/dc/dcmitype/Image", "schema:MediaObject", "rdfs:Resource", "schema:Thing", "schema:CreativeWork" ],
+    "schema:caption" : {
+      "@language" : "de",
+      "@value" : "Skifahren"
+    },
+    "category" : "20",
+    "schema:contentUrl" : "https://imageupload.seekda.com/~images/AT_ET_VITA/1TXFB_schr%C3%A4ger+Fernblick.jpg?orig"
+  }, {
+    "@id" : "_:b2",
+    "@type" : [ "schema:PriceSpecification", "schema:StructuredValue", "rdfs:Resource", "schema:Intangible", "schema:Thing" ],
+    "schema:price" : 100.0,
+    "price:Currency" : "EUR",
+    "schema:valueAddedTaxIncluded" : true
+  }, {
+    "@id" : "_:b3",
+    "@type" : [ "schema:CreativeWork", "http://purl.org/dc/dcmitype/Image", "rdfs:Resource", "schema:ImageObject", "schema:MediaObject", "schema:Thing" ],
+    "schema:caption" : [ {
+      "@language" : "de",
+      "@value" : "Dampfbad"
+    }, {
+      "@language" : "en",
+      "@value" : "Steambath"
+    } ],
+    "category" : "12",
+    "schema:contentUrl" : "https://imageupload.seekda.com/~images/AT_ET_VITA/dampfbad.bunt.jpg?orig"
+  }, {
+    "@id" : "_:b4",
+    "@type" : [ "schema:GeoCoordinates", "schema:StructuredValue", "rdfs:Resource", "schema:Intangible", "schema:Thing" ],
+    "schema:latitude" : 47.155164,
+    "schema:longitude" : 11.727304
+  }, {
+    "@id" : "_:b5",
+    "@type" : [ "schema:Intangible", "rdfs:Resource", "schema:Thing", "schema:Offer" ],
+    "BuyAction" : "http://localhost:8080/sws16/ServicePackaging/api/hotels/AT_ET_VITA/buy/AT_ET_VITAGUTS_50",
+    "schema:category" : "Gutschein",
+    "image" : [ "_:b0", "_:b1" ],
+    "schema:name" : {
+      "@language" : "de",
+      "@value" : "Wertgutschein Ã¼ber â‚¬ 50,00"
+    },
+    "offeredBy" : "http://localhost:8080/sws16/ServicePackaging/api/hotels/AT_ET_VITA",
+    "priceSpecification" : "_:b6",
+    "schema:serialNumber" : "AT_ET_VITAGUTS_50"
+  }, {
+    "@id" : "_:b6",
+    "@type" : [ "schema:PriceSpecification", "schema:Intangible", "rdfs:Resource", "schema:StructuredValue", "schema:Thing" ],
+    "schema:price" : 50.0,
+    "price:Currency" : "EUR",
+    "schema:valueAddedTaxIncluded" : true
+  }, {
+    "@id" : "_:b7",
+    "@type" : [ "rdfs:Resource", "schema:Thing", "schema:ContactPoint", "schema:PostalAddress", "schema:StructuredValue", "schema:Intangible" ],
+    "addressCountry" : "_:b8",
+    "address:Locality" : "Tux",
+    "address:Region" : "",
+    "schema:postalCode" : "6293",
+    "schema:streetAddress" : "Lanersbach 433"
+  }, {
+    "@id" : "_:b8",
+    "@type" : [ "schema:Country", "rdfs:Resource", "schema:Thing", "schema:Place", "schema:AdministrativeArea" ],
+    "schema:iso" : "AT",
+    "schema:name" : ""
+  }, {
+    "@id" : "_:b9",
+    "@type" : [ "schema:Thing", "rdfs:Resource", "schema:Intangible", "schema:Offer" ],
+    "BuyAction" : "http://localhost:8080/sws16/ServicePackaging/api/hotels/AT_ET_VITA/buy/AT_ET_VITAWELLNESSGU",
+    "schema:category" : "Gutschein",
+    "image" : "_:b3",
+    "schema:name" : [ {
+      "@language" : "en",
+      "@value" : "Wellnessgutschein im Wert von â‚¬ 100"
+    }, {
+      "@language" : "de",
+      "@value" : "Wellnessgutschein im Wert von â‚¬ 100"
+    } ],
+    "offeredBy" : "http://localhost:8080/sws16/ServicePackaging/api/hotels/AT_ET_VITA",
+    "priceSpecification" : "_:b2",
+    "schema:serialNumber" : "AT_ET_VITAWELLNESSGU"
+  }, {
+    "@id" : "http://localhost:8080/sws16/ServicePackaging/api/hotels/AT_ET_VITA",
+    "@type" : [ "schema:Organization", "schema:Place", "schema:LocalBusiness", "schema:LodgingBusiness", "rdfs:Resource", "schema:Thing" ],
+    "address" : "_:b7",
+    "schema:branchCode" : "AT_ET_VITA",
+    "schema:geo" : {
+      "@id" : "_:b4"
+    },
+    "makesOffer" : [ "_:b5", "_:b9" ],
+    "schema:name" : "Sport Vital Hotel Central",
+    "schema:telephone" : [ "43528785040", "435287850450" ],
+    "url" : "http://www.vital-central.at"
+  } ],
+  "@context" : {
+    "caption" : {
+      "@id" : "http://schema.org/caption",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "contentUrl" : {
+      "@id" : "http://schema.org/contentUrl",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "category" : {
+      "@id" : "http://schema.org/category",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "valueAddedTaxIncluded" : {
+      "@id" : "http://schema.org/valueAddedTaxIncluded",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "priceCurrency" : {
+      "@id" : "http://schema.org/priceCurrency",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "price" : {
+      "@id" : "http://schema.org/price",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "longitude" : {
+      "@id" : "http://schema.org/longitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "latitude" : {
+      "@id" : "http://schema.org/latitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "BuyAction" : {
+      "@id" : "http://schema.org/BuyAction",
+      "@type" : "@id"
+    },
+    "image" : {
+      "@id" : "http://schema.org/image",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://schema.org/name",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "serialNumber" : {
+      "@id" : "http://schema.org/serialNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "offeredBy" : {
+      "@id" : "http://schema.org/offeredBy",
+      "@type" : "@id"
+    },
+    "priceSpecification" : {
+      "@id" : "http://schema.org/priceSpecification",
+      "@type" : "@id"
+    },
+    "addressCountry" : {
+      "@id" : "http://schema.org/addressCountry",
+      "@type" : "@id"
+    },
+    "addressLocality" : {
+      "@id" : "http://schema.org/addressLocality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "postalCode" : {
+      "@id" : "http://schema.org/postalCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "streetAddress" : {
+      "@id" : "http://schema.org/streetAddress",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "addressRegion" : {
+      "@id" : "http://schema.org/addressRegion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "makesOffer" : {
+      "@id" : "http://schema.org/makesOffer",
+      "@type" : "@id"
+    },
+    "address" : {
+      "@id" : "http://schema.org/address",
+      "@type" : "@id"
+    },
+    "telephone" : {
+      "@id" : "http://schema.org/telephone",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "geo" : "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "url" : {
+      "@id" : "http://schema.org/url",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "branchCode" : {
+      "@id" : "http://schema.org/branchCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "iso" : {
+      "@id" : "http://schema.org/iso",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "schema" : "http://schema.org/",
+    "acco" : "http://purl.org/acco/ns#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "gn" : "http://www.geonames.org/ontology#",
+    "fn" : "http://www.w3.org/2005/xpath-functions#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "gr" : "http://purl.org/goodrelations/v1#",
+    "vcard" : "http://www.w3.org/2006/vcard/ns#",
+    "cal" : "http://www.w3.org/2002/12/cal#",
+    "dct" : "http://purl.org/dc/terms/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "lode" : "http://linkedevents.org/ontology/",
+    "context" : "http://data.redlink.io/context/",
+    "redlink" : "http://data.redlink.io/",
+    "sesame" : "http://www.openrdf.org/schema/sesame#",
+    "time" : "http://www.w3.org/2006/time#",
+    "xs" : "http://www.w3.org/2001/XMLSchema",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}

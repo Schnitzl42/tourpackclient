@@ -1,0 +1,119 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : [ "http://schema.org/StructuredValue", "http://schema.org/Thing", "http://schema.org/PriceSpecification", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://schema.org/Intangible" ],
+    "http://schema.org/price" : 79.0,
+    "price:Currency" : "EUR",
+    "http://schema.org/valueAddedTaxIncluded" : true
+  }, {
+    "@id" : "_:b1",
+    "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Resource", "http://purl.org/dc/dcmitype/Image", "http://schema.org/CreativeWork", "http://schema.org/Thing", "http://schema.org/ImageObject", "http://schema.org/MediaObject" ],
+    "http://schema.org/caption" : [ {
+      "@language" : "de",
+      "@value" : "Hot Stone"
+    }, {
+      "@language" : "en",
+      "@value" : "Hot Stone"
+    } ],
+    "http://schema.org/category" : {
+      "@type" : "http://www.w3.org/2001/XMLSchema#int",
+      "@value" : "12"
+    },
+    "http://schema.org/contentUrl" : "https://images.seekda.com/DE_BADW_AMBIENTE/Hot-stone.jpg?orig"
+  }, {
+    "@id" : "http://localhost:8080/sws16/ServicePackaging/api/DE_BADW_AMBIENTEHOT_STONE",
+    "@type" : [ "http://schema.org/Intangible", "http://www.w3.org/2000/01/rdf-schema#Resource", "http://schema.org/Offer", "http://schema.org/Thing" ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@language" : "en",
+      "@value" : "Eine Verbindung aus Massage und Energiebehandlung:wohltuende warme Lavasteine in Kombination mit exklusiven Ã–len. DieLavasteine lassen wir sanft Ã¼ber Ihren KÃ¶rper gleiten und erzeugen so ein hohes MaÃŸ an Entspannung und Beruhigung. Zudem werden Verspannungen im weichen Gewebe und in den Meridianen gelockert. Dauer 90 Minuten inklusive 15 Minuten Nachruhe.(Der Preis gilt pro Anwendung.) &nbsp;"
+    }, {
+      "@language" : "de",
+      "@value" : "Eine Verbindung aus Massage und Energiebehandlung:wohltuende warme Lavasteine in Kombination mit exklusiven Ã–len. DieLavasteine lassen wir sanft Ã¼ber Ihren KÃ¶rper gleiten und erzeugen so ein hohes MaÃŸ an Entspannung und Beruhigung. Zudem werden Verspannungen im weichen Gewebe und in den Meridianen gelockert. Dauer 90 Minuten inklusive 15 Minuten Nachruhe.(Der Preis gilt pro Anwendung.) &nbsp;"
+    } ],
+    "BuyAction" : "http://localhost:8080/sws16/ServicePackaging/api/hotels/DE_BADW_AMBIENTE/buy/DE_BADW_AMBIENTEHOT_STONE",
+    "http://schema.org/category" : "",
+    "http://schema.org/description" : [ {
+      "@language" : "en",
+      "@value" : "Eine Verbindung aus Massage und Energiebehandlung:wohltuende warme Lavasteine in Kombination mit exklusiven Ã–len. DieLavasteine lassen wir sanft Ã¼ber Ihren KÃ¶rper gleiten und erzeugen so ein hohes MaÃŸ an Entspannung und Beruhigung. Zudem werden Verspannungen im weichen Gewebe und in den Meridianen gelockert. Dauer 90 Minuten inklusive 15 Minuten Nachruhe.(Der Preis gilt pro Anwendung.) &nbsp;"
+    }, {
+      "@language" : "de",
+      "@value" : "Eine Verbindung aus Massage und Energiebehandlung:wohltuende warme Lavasteine in Kombination mit exklusiven Ã–len. DieLavasteine lassen wir sanft Ã¼ber Ihren KÃ¶rper gleiten und erzeugen so ein hohes MaÃŸ an Entspannung und Beruhigung. Zudem werden Verspannungen im weichen Gewebe und in den Meridianen gelockert. Dauer 90 Minuten inklusive 15 Minuten Nachruhe.(Der Preis gilt pro Anwendung.) &nbsp;"
+    } ],
+    "image" : "_:b1",
+    "http://schema.org/name" : [ {
+      "@language" : "en",
+      "@value" : "Hote Stone"
+    }, {
+      "@language" : "de",
+      "@value" : "Hot Stone"
+    } ],
+    "offeredBy" : "http://localhost:8080/sws16/ServicePackaging/api/hotels/DE_BADW_AMBIENTE",
+    "priceSpecification" : "_:b0",
+    "http://schema.org/serialNumber" : "DE_BADW_AMBIENTEHOT_STONE",
+    "http://schema.org/teaser" : [ {
+      "@language" : "en",
+      "@value" : "KÃ¶rperbehandlung, die KÃ¶rper, Geist und Seele in Einklang bringt."
+    }, {
+      "@language" : "de",
+      "@value" : "KÃ¶rperbehandlung, die KÃ¶rper, Geist und Seele in Einklang bringt."
+    } ]
+  } ],
+  "@context" : {
+    "valueAddedTaxIncluded" : {
+      "@id" : "http://schema.org/valueAddedTaxIncluded",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "priceCurrency" : {
+      "@id" : "http://schema.org/priceCurrency",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "price" : {
+      "@id" : "http://schema.org/price",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "offeredBy" : {
+      "@id" : "http://schema.org/offeredBy",
+      "@type" : "@id"
+    },
+    "priceSpecification" : {
+      "@id" : "http://schema.org/priceSpecification",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://schema.org/name",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "serialNumber" : {
+      "@id" : "http://schema.org/serialNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "image" : {
+      "@id" : "http://schema.org/image",
+      "@type" : "@id"
+    },
+    "teaser" : {
+      "@id" : "http://schema.org/teaser",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "description" : {
+      "@id" : "http://schema.org/description",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "BuyAction" : {
+      "@id" : "http://schema.org/BuyAction",
+      "@type" : "@id"
+    },
+    "category" : {
+      "@id" : "http://schema.org/category",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "caption" : {
+      "@id" : "http://schema.org/caption",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "contentUrl" : {
+      "@id" : "http://schema.org/contentUrl",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "at.sti_innsbruck.tourpackclient"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res',
+                            'src/main/res/layout_cards'
+
+                    ]
+        }
+    }
+
+
+
+}
+
+repositories{
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    //NEW LIST VIEW
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+
+    //IMAGES
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'de.hdodenhof:circleimageview:1.2.1'
+    //JSON
+   // compile 'com.fasterxml.jackson.core:jackson-core:2.4.1'
+    //compile 'com.fasterxml.jackson.core:jackson-annotations:2.4.1'
+    //compile 'com.fasterxml.jackson.core:jackson-databind:2.4.1'
+    //https://github.com/io-informatics/jackson-jsonld
+    //compile 'com.io-informatics.oss:jackson-jsonld:0.0.5'
+
+    compile 'com.google.code.gson:gson:2.6.2'
+
+    //EventBus
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //GrennDao ORMapper
+    compile 'de.greenrobot:greendao:2.1.0'
+
+    compile 'io.realm:realm-android:0.84.1'
+
+    //date picker
+    compile 'com.borax12.materialdaterangepicker:library:1.7'
+    //PLACE API //errors with version 9
+    compile 'com.google.android.gms:play-services-location:8.+'
+    //HTTP
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+}

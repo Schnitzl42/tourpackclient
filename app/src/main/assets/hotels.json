@@ -1,0 +1,40 @@
+{
+  "@graph" : [ {
+    "@id" : "http://localhost:8080/sws16/ServicePackaging/api/hotels/AT_ET_VITA",
+    "@type" : "http://schema.org/LodgingBusiness",
+    "makesOffer" : [ "http://localhost:8080/sws16/ServicePackaging/api/offers/AT_ET_VITAWELLNESSGU", "http://localhost:8080/sws16/ServicePackaging/api/offers/AT_ET_VITAGUTS_50" ],
+    "http://schema.org/name" : "Sport Vital Hotel Central"
+  }, {
+    "@id" : "http://localhost:8080/sws16/ServicePackaging/api/hotels/AT_FINK_AUSSICHT",
+    "@type" : "http://schema.org/LodgingBusiness",
+    "makesOffer" : ["http://localhost:8080/sws16/ServicePackaging/api/offers/AT_FINK_AUSSICHTSKIPASS_6_"],
+    "http://schema.org/name" : "Ferienhotel Aussicht"
+  }, {
+    "@id" : "http://localhost:8080/sws16/ServicePackaging/api/hotels/AT_FINK_DORNAU",
+    "@type" : "http://schema.org/LodgingBusiness",
+    "makesOffer" : [ "http://localhost:8080/sws16/ServicePackaging/api/offers/AT_FINK_DORNAUZILLERTAL_", "http://localhost:8080/sws16/ServicePackaging/api/offers/AT_FINK_DORNAUWELNESSGUT" ],
+    "http://schema.org/name" : "Hotel Dornauhof"
+  },{
+    "@id" : "http://localhost:8080/sws16/ServicePackaging/api/hotels/HotelIBK",
+    "@type" : "http://schema.org/LodgingBusiness",
+    "http://schema.org/name" : "Hotel Innsbruck"
+  }, {
+    "@id" : "http://localhost:8080/sws16/ServicePackaging/api/hotels/KolpingHaus",
+    "@type" : "http://schema.org/LodgingBusiness",
+    "http://schema.org/name" : "Kolping hostel"
+  }, {
+    "@id" : "http://localhost:8080/sws16/ServicePackaging/api/hotels/HotelIBK",
+    "@type" : "http://schema.org/LodgingBusiness",
+    "http://schema.org/name" : "Motel Inn"
+  }],
+  "@context" : {
+    "name" : {
+      "@id" : "http://schema.org/name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "makesOffer" : {
+      "@id" : "http://schema.org/makesOffer",
+      "@type" : "@id"
+    }
+  }
+}
